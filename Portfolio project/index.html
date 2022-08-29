@@ -1,53 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
+  <head>
     <title>Padma Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main>
-    <header>
-    <h4>Padma Sree Nandini</h4>
-    <nav>
-    <ul>
-        <li> <a href="#projects" >Projects</a></li>
-        <li><a href="#about_me"> About me</a></li>
-        <li> <a href="#skills">Skills</a></li>
-        <li><a href="https://en.bc.fi/">More about BCH</a> </li>
-    </ul>
-</nav>
-<div class="hero-image">
-    <div class="hero-text">
-   <h1>Welcome to my Portfolio</h1>
-   </div>
-</div>
-</header>
-</main>
+      <header>
+        <h2>Padma Sree Nandini</h2>
+        <nav>
+          <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about_me"> About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact_me">Contact me</a></li>
+            <li><a href="https://en.bc.fi/">More about BCH</a></li>
+          </ul>
+        </nav>
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1>Welcome to my Portfolio</h1>
+          </div>
+        </div>
+      </header>
+    </main>
     <div id="projects">
-        <h2> Projects</h2>
-        <img src="/project.jpg" class="center" >
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-        </p>  
+      <section>
+        <figure>
+          <img src="/project.jpg" class="image" id="proimg" />
+        </figure>
+        <article>
+          <h2>Projects</h2>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default
+            model text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy. Various versions have evolved over the
+            years, sometimes by accident, sometimes on purpose (injected humour
+            and the like).
+          </p>
+        </article>
+      </section>
     </div>
     <div id="about_me">
-        <h2>About me </h2>
-        <img src="/aboutme.jpg" class="center" >
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-        </p>  
+      <section>
+        <figure>
+          <img src="/aboutme.jpg" class="image" id="aboutimg" />
+        </figure>
+        <article>
+          <h2>About me</h2>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default
+            model text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy. Various versions have evolved over the
+            years, sometimes by accident, sometimes on purpose (injected humour
+            and the like).
+          </p>
+        </article>
+      </section>
     </div>
     <div id="skills">
-        <h2>Skills </h2>
-        <img src="/skills.jpg"  class="center">
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-        </p>  
+      <section>
+        <figure>
+          <img src="skills.jpg" class="image" id="skillsimg" />
+        </figure>
+        <article>
+          <h2>Skills</h2>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default
+            model text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy. Various versions have evolved over the
+            years, sometimes by accident, sometimes on purpose (injected humour
+            and the like).
+          </p>
+        </article>
+      </section>
     </div>
-<footer>
-    <h6></h6>Copyright Ⓒ My Website 2022 </h6>
-</footer>
-     
-</body>
+    <footer>
+      <div class="container" id="contact_me">
+        <form>
+          <h3>Contact me</h3>
+          <div class="row">
+            <div class="col1">
+              <label for="yourname">Your name</label>
+            </div>
+            <div class="col2">
+              <input type="text" id="yourname" name="yourname" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col1">
+              <label for="email">Your email</label>
+            </div>
+            <div class="col2">
+              <input type="email" id="email" name="email" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col1">
+              <label for="messagetome">Message to me</label>
+            </div>
+            <div class="col2">
+              <input type="textarea" id="messagetome" name="messagetome" />
+            </div>
+          </div>
+          <div class="button">
+            <input type="button" value="SEND MESSAGE" />
+          </div>
+          <h6>Copyright Ⓒ My Website 2022</h6>
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>
