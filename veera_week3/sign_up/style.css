@@ -1,65 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(10, 67, 10);
+  font-family: "Open Sans", sans-serif;
+  background-color: #236746;
 }
+
+a {
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+p,
+h1 {
+  text-align: center;
+}
+h1 {
+  font-weight: 400;
+}
+
+form div {
+  text-align: left;
+}
+.container {
+  width: 270px;
+  font-size: 0.9rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.white_box {
+  background-color: white;
+  padding: 7%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border-color: rgb(163, 163, 163);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
 label {
   display: inline-block;
-  width: 150px;
-  margin: 10px 0;
+  font-size: 0.55rem;
+  margin: 10px 0 3px;
+  color: black;
 }
 button {
+  font-family: inherit;
   border: none;
-  background-color: orange;
-  padding: 5px;
-  border-radius: 2px;
+  background-color: #ff7f50;
+  padding: 8px 0;
+  border-radius: 4px;
   margin-top: 20px;
   color: white;
-  width: 75%;
+  width: 80%;
 }
-/* #box {
-  border-style: solid;
-  border-radius: 25px;
-  padding: 50px;
-  margin-left: 400px;
-  margin-right: 400px;
-  margin-top: 100px;
-  margin-bottom: 200px;
-
-  background-color: white;
-} */
-/* .col1 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
+.subline {
+  font-size: 0.85rem;
+  margin: 1rem 0;
 }
-
-.col2 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-} */
-#box {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 0.8rem;
-  width: 250px;
-  font-size: 0.9rem;
+.disclaimer {
+  font-size: 0.6rem;
+  margin: 1rem 0;
 }
-form {
-  padding: 0.8rem;
-  margin: auto;
-}
-
-@media screen and (max-width: 600px) {
-  .col1,
-  .col2,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
-  }
+.bottomline {
+  color: white;
 }
