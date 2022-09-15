@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: 0.4rem;
+}
+.item {
+  min-height: 100px;
+}
+.Stitle {
+  background: yellow;
+  grid-column: 1 / span 3;
+}
+.nav {
+  background: pink;
+}
+.Ptitle {
+  background: skyblue;
+  grid-column: 1 / span 5;
+}
+.sidebar {
+  background: burlywood;
+  grid-row: 2 / span 2;
+  grid-column: 6 / span 1;
+}
+.meta {
+  background: lightgreen;
+  grid-row: 3 / span 5;
+}
+.content {
+  background: grey;
+  grid-column: 2 / span 4;
+  grid-row: 3 / span 2;
+}
+.ads {
+  background: green;
+  grid-row: 4 / span 2;
+  grid-column: 6 / span 1;
+}
+.image {
+  background: yellow;
+  grid-column: 2 / span 4;
+  grid-row: 5 / span 3;
+}
+.stuff {
+  background: purple;
+  grid-row: 6 / span 2;
+}
+.footer {
+  background: rgb(162, 131, 92);
+  grid-column: 1 / span 7;
+}
