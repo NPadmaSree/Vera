@@ -19,11 +19,19 @@
     />
     <title>Padma Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/favicon_io/favicon-32x32.png"
+    />
   </head>
   <body>
-    <main>
-      <header>
-        <h2>Padma Sree Nandini</h2>
+    <header>
+      <div class="top-bar">
+        <div class="logo">
+          <img src="assets/logopadma.jpg" alt="lgp" />
+          <h id="name">Padma Sree Nandini</hs>
+        </div>
         <nav>
           <ul>
             <li><a href="#projects">Projects</a></li>
@@ -33,15 +41,16 @@
             <li><a href="https://en.bc.fi/">More about BCH</a></li>
           </ul>
         </nav>
-        <div class="hero-image">
-          <div class="hero-text">
-            <h1>Welcome to my Portfolio</h1>
-          </div>
-        </div>
-      </header>
-    </main>
+      </div>
 
-    <section id="projects">
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Welcome to my Portfolio</h1>
+        </div>
+      </div>
+    </header>
+
+    <section id="section1">
       <h2>Projects</h2>
       <div class="cards">
         <div class="project_card">
@@ -74,13 +83,12 @@
       </div>
     </section>
 
-    <section id="about_me">
-      <figure>
-        <img src="assets/aboutme.jpg" class="image" id="aboutimg" />
-      </figure>
+    <section id="section2">
+  
       <article>
         <h2>About me</h2>
-        <p>
+        <img src="assets/aboutme.jpg" class="image" id="aboutimg" />
+        <p id="aboutmetext">
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsum is that it has a more-or-less normal distribution of
@@ -94,7 +102,7 @@
       </article>
     </section>
 
-    <section id="skills">
+    <section id="section3">
       <h2>Skills</h2>
       <div class="skillscontainer">
         <div class="skills">
@@ -111,7 +119,7 @@
           </svg>
 
           <p class="subline">HTML5</p>
-          <progress value="95" max="100">95%</progress>
+          <progress value="40" max="100">40%</progress>
         </div>
         <div class="skills">
           <svg
@@ -127,7 +135,7 @@
           </svg>
 
           <p class="subline">CSS3</p>
-          <progress value="80" max="100">80%</progress>
+          <progress value="40" max="100">40%</progress>
         </div>
         <div class="skills">
           <svg
@@ -152,7 +160,7 @@
           </svg>
 
           <p class="subline">JavaScript</p>
-          <progress value="60" max="100">60%</progress>
+          <progress value="40" max="100">40%</progress>
         </div>
         <div class="skills">
           <svg
@@ -174,7 +182,7 @@
           </svg>
 
           <p class="subline">Learning</p>
-          <progress value="50" max="100">50%</progress>
+          <progress value="40" max="100">40%</progress>
         </div>
         <div class="skills">
           <svg
@@ -191,14 +199,14 @@
             />
           </svg>
           <p class="subline">Node</p>
-          <progress value="50" max="100">50%</progress>
+          <progress value="40" max="100">40%</progress>
         </div>
       </div>
     </section>
     <footer>
       <div class="container" id="contact_me">
         <form>
-          <h3>Contact me</h3>
+          <h3 id="cm">Contact me</h3>
           <div class="row">
             <div class="col1">
               <label for="yourname">Your name</label>
@@ -229,6 +237,9 @@
           <h5>Copyright Ⓒ My Website 2022</h5>
         </form>
       </div>
+      <button class="btn" id="back_to_top">
+        Back to Top <span class="material-icons">arrow_upward</span>
+      </button>
     </footer>
   </body>
 </html>

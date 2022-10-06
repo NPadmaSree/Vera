@@ -21,6 +21,7 @@ h1 {
   font-size: 40px;
 }
 h2 {
+  padding: 1rem;
   text-align: left;
   font-size: 30px;
   color: rgb(5, 85, 92);
@@ -30,9 +31,26 @@ h3 {
   text-align: left;
   color: rgb(5, 85, 92);
 }
+.logo {
+  padding: 1rem;
+  display: flex;
+  align-content: flex-start;
+}
+.logo img {
+  max-width: 3rem;
+  max-height: 3rem;
+}
+#name {
+  margin-left: 1rem;
+  color: white;
+}
+
 h5 {
   text-align: center;
   padding: 1rem;
+}
+#cm {
+  color: white;
 }
 .hero-image {
   background-image: url("assets/flower.jpg"); /* The image used */
@@ -51,12 +69,25 @@ h5 {
   transform: translate(-50%, -50%);
   color: white;
 }
+.top-bar {
+  display: flex;
+  background-color: rgb(5, 85, 92);
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  height: 100%;
   overflow: hidden;
-  background-color: rgb(5, 85, 92);
+  display: flex;
+  align-items: center;
 }
 li a {
   display: block;
@@ -66,7 +97,7 @@ li a {
   text-decoration: none;
 }
 li {
-  float: left;
+  float: right;
 }
 
 li a :hover {
@@ -78,14 +109,25 @@ li a :hover {
   margin-right: auto;
   width: 15%;
 }
+/* sections */
 section {
   padding: 5%;
   border-style: double;
 }
+section {
+  min-height: 80vh;
+  scroll-margin-top: 5rem;
+}
+
+section:nth-child(3) {
+  background-color: rgb(5, 85, 92);
+}
+
 .projects_image {
   display: flex;
   justify-content: center;
   width: 100%;
+  width: 200px;
   height: 150px;
   object-fit: cover;
 }
@@ -113,7 +155,9 @@ a {
 #aboutimg {
   float: right;
 }
-
+#aboutmetext {
+  color: white;
+}
 p {
   color: rgb(5, 85, 92);
 }
@@ -158,11 +202,21 @@ input[type="button"]:hover {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* progress[value]::-webkit-progress-value {
-  background-color: rgb(59, 207, 99);
+
+progress[value] {
+  height: 1 rem;
+  -webkit-appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+  background: white;
   border-radius: 5px;
-  background-size: 35px 20px;
-} */
+}
+progress[value]::-webkit-progress-value {
+  background-color: rgb(205, 61, 36);
+  border-radius: 5px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
 svg {
   display: block;
   font-size: 4rem;
